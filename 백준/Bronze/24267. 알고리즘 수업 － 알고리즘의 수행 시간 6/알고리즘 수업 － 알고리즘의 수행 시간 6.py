@@ -1,6 +1,4 @@
 n = int(input())
 
-sum = (n-2)*(n-4)
-
-print(((n-2)*(n-1)*(2*n-3)+3*(n-1)*(n-2))//12)
+print((n-2)*(n-1)*n//6)
 print(3)
