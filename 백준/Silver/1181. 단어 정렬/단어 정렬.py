@@ -1,12 +1,16 @@
-n = int(input())
-s = [0]*n
-for i in range(n):
-    s[i] = input()
-set_s = set(s)
-s = list(set_s)
-s.sort()
-s.sort(key=len)
-for i in s:
-    print(i)
+import sys
 
+n = int(sys.stdin.readline())
+
+ws = []
+
+for i in range(n):
+    word = sys.stdin.readline().strip()
+    ws.append(word)
     
+wss=set(ws)
+ws = list(wss)
+ws.sort(key = lambda x : (len(x), x))
+
+for x in ws:
+    print(x)
