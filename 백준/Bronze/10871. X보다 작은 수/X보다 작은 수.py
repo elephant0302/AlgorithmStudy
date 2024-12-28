@@ -1,4 +1,4 @@
-a,b = map(int,input().split())
+a,b = map(int,input().strip().split())
 
 n_list = list(map(int,input().split()))
 
