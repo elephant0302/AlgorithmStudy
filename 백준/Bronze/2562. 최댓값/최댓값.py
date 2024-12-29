@@ -1,4 +1,7 @@
-numbers = [int(input()) for _ in range(9)]
+import sys
+n = []
+for i in range(9):
+    n.append(int(sys.stdin.readline()))
 
-print(max(numbers))
-print(numbers.index(max(numbers)) + 1)
+print(max(n))
+print(n.index(max(n))+1)
